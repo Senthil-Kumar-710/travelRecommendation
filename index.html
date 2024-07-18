@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Bloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Website Logo">
+            <span>Travel Bloom</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search..." id="search-input">
+            <button onclick="search()">Search</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="clearResults()">Clear</button>
+        </div>
+    </nav>
+    <div class="home">
+        <div class="background-image"></div>
+        <div class="intro-text">
+            <h1>EXPLORE DREAM DESTINATION</h1>
+            <p>Traveling opens the mind to new cultures, experiences, and perspectives. It allows you to break free from routine, discover hidden gems, and create unforgettable memories. Embrace the journey, explore the unknown, and let the world inspire you. Every adventure enriches your soul and broadens your horizons.</p>
+        </div>
+    </div>
+    <div class="recommendations" id="recommendations"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

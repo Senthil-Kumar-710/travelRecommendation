@@ -1,0 +1,125 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #555;
+    color: white;
+}
+
+.home {
+    position: relative;
+    height: calc(100vh - 60px); /* Adjust based on the height of the navbar */
+    overflow: hidden;
+}
+
+.background-image {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.intro-text {
+    text-align: center;
+    color: white;
+    margin-top: 20%;
+    padding: 0 20px;
+}
+
+.recommendations {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.recommendation {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 2rem);
+    text-align: center;
+    overflow: hidden;
+}
+
+.recommendation img {
+    width: 100%;
+    height: auto;
+}
+
+.recommendation h3 {
+    margin: 1rem 0;
+}
+
+.recommendation p {
+    padding: 0 1rem 1rem;
+    color: #666;
+}
+
